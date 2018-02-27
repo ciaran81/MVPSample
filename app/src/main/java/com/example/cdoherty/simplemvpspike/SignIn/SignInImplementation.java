@@ -7,13 +7,13 @@ package com.example.cdoherty.simplemvpspike.SignIn;
 public interface SignInImplementation {
 
      interface SignInListener {
-        void onSignInReceived(String message);
+        void onSignInReceived(boolean isSignedIn);
 
-        void onSignUpReceived(String message);
+        void onSignUpReceived();
     }
 
     void signIn(String username, String password, SignInListener listener);
 
-    void signUp(String name, String username, SignInListener listener);
+    void signUp(SignInListener listener);
 
 }

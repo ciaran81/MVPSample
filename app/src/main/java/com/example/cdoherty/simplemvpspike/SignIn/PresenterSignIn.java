@@ -1,8 +1,5 @@
 package com.example.cdoherty.simplemvpspike.SignIn;
 
-import android.util.Log;
-import android.view.View;
-
 /**
  * Created by cdoherty on 27/02/2018.
  */
@@ -18,24 +15,24 @@ public class PresenterSignIn implements SignInInteractor, SignInImplementation.S
     }
 
     @Override
-    public void onSignInClick() {
-        modelSignIn.signIn("....", "...", this);
+    public void onSignInClick(String username, String password) {
+        modelSignIn.signIn(username, password, this);
 
     }
 
     @Override
     public void onSignUpClick() {
-        modelSignIn.signUp("..", "...", this);
+        modelSignIn.signUp( this);
     }
 
     @Override
-    public void onSignInReceived(String message) {
-        viewSignIn.provideFeedback(message);
+    public void onSignInReceived(boolean isSignedIn) {
+        viewSignIn.signIn(isSignedIn);
     }
 
     @Override
-    public void onSignUpReceived(String message) {
-        viewSignIn.provideFeedback(message);
+    public void onSignUpReceived() {
+        viewSignIn.signUp();
     }
 
 }

@@ -5,7 +5,7 @@ package com.example.cdoherty.simplemvpspike.SignIn;
  */
 
 public interface SignInInteractor {
-    void onSignInClick();
+    void onSignInClick(String username, String password);
 
     void onSignUpClick();
 }

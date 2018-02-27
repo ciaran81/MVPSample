@@ -6,6 +6,7 @@ package com.example.cdoherty.simplemvpspike.SignIn;
 
 public interface ViewSignIn {
 
-    void provideFeedback(String message);
+    void signIn(boolean isSignedIn);
+    void signUp();
 
 }

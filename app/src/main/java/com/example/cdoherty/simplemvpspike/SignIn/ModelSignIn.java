@@ -8,18 +8,22 @@ import android.util.Log;
 
 public class ModelSignIn implements SignInImplementation {
 
-    public ModelSignIn() {
+    public static final String TAG = ModelSignIn.class.getSimpleName();
+
+    @Override
+    public void signIn(String name, String password, SignInListener listener) {
+        Log.d(TAG, "signIn: " + name + " " + password);
+        //if sign in successful
+        listener.onSignInReceived(validateSignIn(name, password));
     }
 
     @Override
-    public void signIn(String name, String username, SignInListener listener) {
-        listener.onSignInReceived("sign in received");
+    public void signUp(SignInListener listener) {
+        listener.onSignUpReceived();
     }
 
-    @Override
-    public void signUp(String name, String username, SignInListener listener) {
-        listener.onSignUpReceived("sign up received");
+    private boolean validateSignIn(String username, String password) {
+        //todo check shared prefs for username and password
+        return (password.equals("password"));
     }
-
-    //todo act on when the buttons are pressed through the presenter
 }

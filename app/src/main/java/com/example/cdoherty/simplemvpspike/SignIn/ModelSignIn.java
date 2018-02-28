@@ -28,7 +28,6 @@ public class ModelSignIn implements SignInImplementation {
 
     private boolean validateSignIn(String username, String password) {
         //todo check shared prefs for username and password
-        //firebase 3
         return (password.equals("password"));
     }
 }

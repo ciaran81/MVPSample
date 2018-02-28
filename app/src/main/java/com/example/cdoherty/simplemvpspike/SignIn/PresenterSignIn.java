@@ -31,7 +31,7 @@ public class PresenterSignIn implements SignInInteractor, SignInImplementation.S
     }
 
     @Override
-    public void onSignUpReceived() {
+    public void onSignUp() {
         viewSignIn.signUp();
     }
 

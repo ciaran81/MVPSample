@@ -2,6 +2,8 @@ package com.example.cdoherty.simplemvpspike.SignIn;
 
 import android.util.Log;
 
+import com.google.firebase.crash.FirebaseCrash;
+
 /**
  * Created by cdoherty on 27/02/2018.
  */
@@ -9,6 +11,8 @@ import android.util.Log;
 public class ModelSignIn implements SignInImplementation {
 
     public static final String TAG = ModelSignIn.class.getSimpleName();
+    private SignUpDialog signUpDialog;
+
 
     @Override
     public void signIn(String name, String password, SignInListener listener) {
@@ -19,11 +23,12 @@ public class ModelSignIn implements SignInImplementation {
 
     @Override
     public void signUp(SignInListener listener) {
-        listener.onSignUpReceived();
+        listener.onSignUp();
     }
 
     private boolean validateSignIn(String username, String password) {
         //todo check shared prefs for username and password
+        //firebase 3
         return (password.equals("password"));
     }
 }

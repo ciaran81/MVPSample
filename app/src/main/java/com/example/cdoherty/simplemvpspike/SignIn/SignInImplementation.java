@@ -6,10 +6,15 @@ package com.example.cdoherty.simplemvpspike.SignIn;
 
 public interface SignInImplementation {
 
-     interface SignInListener {
+    interface SignInListener {
         void onSignInReceived(boolean isSignedIn);
 
-        void onSignUpReceived();
+        void onSignUp();
+
+    }
+
+    interface SignUpListener {
+        void onSignedUp(boolean isSuccessful);
     }
 
     void signIn(String username, String password, SignInListener listener);

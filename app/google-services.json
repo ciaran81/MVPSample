@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "400923314293",
+    "firebase_url": "https://simplemvp-afe4d.firebaseio.com",
+    "project_id": "simplemvp-afe4d",
+    "storage_bucket": "simplemvp-afe4d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400923314293:android:ea0d2d07b90ead99",
+        "android_client_info": {
+          "package_name": "com.example.cdoherty.simplemvpspike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400923314293-dnplmspo3fkqpl0ougb4h2gicfn0qr2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaNU_6D49orKLl7S7D4Cs7RVNMt5zNpT4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

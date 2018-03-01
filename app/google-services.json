@@ -1,27 +1,35 @@
 {
   "project_info": {
-    "project_number": "400923314293",
-    "firebase_url": "https://simplemvp-afe4d.firebaseio.com",
-    "project_id": "simplemvp-afe4d",
-    "storage_bucket": "simplemvp-afe4d.appspot.com"
+    "project_number": "557528081105",
+    "firebase_url": "https://mvp-project-a3ebe.firebaseio.com",
+    "project_id": "mvp-project-a3ebe",
+    "storage_bucket": "mvp-project-a3ebe.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:400923314293:android:ea0d2d07b90ead99",
+        "mobilesdk_app_id": "1:557528081105:android:ea0d2d07b90ead99",
         "android_client_info": {
           "package_name": "com.example.cdoherty.simplemvpspike"
         }
       },
       "oauth_client": [
         {
-          "client_id": "400923314293-dnplmspo3fkqpl0ougb4h2gicfn0qr2t.apps.googleusercontent.com",
+          "client_id": "557528081105-4js3kpoeti140s3dr1d65d6o65b1eii4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cdoherty.simplemvpspike",
+            "certificate_hash": "d5492dbe5e73b6d1ed19ae5e85a66e1d1d8ca068"
+          }
+        },
+        {
+          "client_id": "557528081105-7g7c7ui05kaaps5mnhg13bdic5mbr0cg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDaNU_6D49orKLl7S7D4Cs7RVNMt5zNpT4"
+          "current_key": "AIzaSyBjalzFR5TWY6Q0nzCHGnWM5Pn03TNo2VE"
         }
       ],
       "services": {
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "557528081105-7g7c7ui05kaaps5mnhg13bdic5mbr0cg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

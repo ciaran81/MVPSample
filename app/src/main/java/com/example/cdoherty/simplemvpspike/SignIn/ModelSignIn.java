@@ -16,7 +16,6 @@ public class ModelSignIn implements SignInImplementation {
 
     @Override
     public void signIn(String name, String password, SignInListener listener) {
-        Log.d(TAG, "signIn: " + name + " " + password);
         //if sign in successful
         listener.onSignInReceived(validateSignIn(name, password));
     }

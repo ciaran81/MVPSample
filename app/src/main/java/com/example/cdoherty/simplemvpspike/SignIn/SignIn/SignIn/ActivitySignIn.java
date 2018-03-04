@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.cdoherty.simplemvpspike.R;
-import com.example.cdoherty.simplemvpspike.SignIn.SignIn.CalendarActivity;
+import com.example.cdoherty.simplemvpspike.SignIn.SignIn.MainActivity;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -101,7 +101,7 @@ public class ActivitySignIn extends AppCompatActivity implements ViewSignIn, Sig
     }
 
     private void startNextActivity() {
-        Intent calendarIntent = new Intent(this, CalendarActivity.class);
+        Intent calendarIntent = new Intent(this, MainActivity.class);
         startActivity(calendarIntent);
     }
 

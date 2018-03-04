@@ -16,8 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignIn.SignIn.MainActivity"/>
         <activity android:name=".SignIn.SignIn.CalendarActivity"/>
-        <activity android:name=".SignIn.SignIn.GenericActivity"/>
     </application>
 
 </manifest>

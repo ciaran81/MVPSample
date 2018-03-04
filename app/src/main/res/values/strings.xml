@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SimpleMVPSpike</string>
+    <string name="navigation_drawer_open">drawer-open</string>
+    <string name="navigation_drawer_close">drawer-close</string>
+    <string name="calendar">Calendar</string>
+    <string name="gmail">Gmail</string>
 </resources>
